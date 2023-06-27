@@ -1,0 +1,481 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Vogue Build</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!--<script src =  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+        <script src =" https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js "></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+            <style>
+                *{
+                    font-family: 'Mulish', sans-serif;
+                }
+                    
+          html{
+  scroll-behavior: smooth;
+}
+.nav {
+    position: fixed;
+    top: 0  ;                                                                   /*navbar*/
+    display: flex;
+    width: 100%;
+    z-index: 3;
+    background-color: rgb(159, 159, 159);
+    color: white;
+    height: 100px;
+    
+
+  }
+
+  .navbar-toggler-icon {
+    display: flex;
+  }
+
+  .gg-list {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 32px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 3px
+  }
+
+  .gg-list::after,
+  .gg-list::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: currentColor;
+    top: 3px;
+    left: 3px;
+    box-shadow:
+      0 4px 0,
+      0 8px 0
+  }
+
+  .gg-list::after {
+    border-radius: 7px;
+    width: 17px;
+    left: 7px;
+  }
+
+  .navbar navbar-expand-lg {
+    background-color: black;
+  }
+
+  
+
+  .offcanvas {
+    background-color: lightgrey;
+
+  }
+
+  .navlinks {
+    display: flex;
+      
+      
+  }
+               
+  .navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    margin-left: 20px;
+  }
+                
+                 .navlinks ul li a:active{
+                    text-decoration: underline;
+                     color: yellow;
+                    
+                }
+
+  .navlinks ul li a {
+
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+
+  }
+                
+
+
+  .navlinks ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    background: rgb(242, 166, 85);
+  }
+
+  .navlinks ul li:hover::after {
+    width: 100%;
+  }
+   /*end*/
+                
+          .navbar navbar-expand-lg{
+              background-color: black;
+          }
+          @media(max-width:991px){
+                     nav{
+                         height: 160px;
+                         background-color: ;
+                     }
+              
+                }
+           /*footer*/      
+                .endlist ul li a{
+    color: black;
+  }
+  .endlist ul li a:hover{
+    color: rgb(242, 166, 85);
+  }
+.ending a{
+    color: black;
+}
+.ending a:hover{
+    color:rgb(242, 166, 85);
+  
+}      
+          .offcanvas{
+              background-color: lightgrey;
+              
+          }
+            @media(max-width:576px){
+        .box{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+                
+                
+                }
+     </style>
+        </head>
+        <body>
+         <section class="canva" >
+      <nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+      
+      <img style="height: 90px; display: block; margin-left: auto; margin-right: auto;" src="assets/icons/Untitled%20design.png" alt="logo.png">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="navbar.html" style="transform: translateX(-50%);left: 15%; position: absolute; align-items: center;margin: 14px;color: white;"><!-- Vogue --></a>
+      
+    <button class="navbar-toggler" style="color: white;" href="#offcanvasExample" role="button" data-bs-toggle="offcanvas"  aria-controls="navbarSupportedContent">
+      <span class="navbar-toggler-icon" style="color: black;border-radius: 5px;padding: 0;" > <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg></span>
+    </button>
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExample">Vogue Build</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="text-decoration: none;color: aliceblue;">
+        <li class="nav-item">
+          <a class="nav-link"  style="color: black;" aria-current="page" href="index.html">Home</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link px-3" style="color: black;" href="renovations.html">Renovations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3  active" style="color: black;" href="services.html">Services</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link px-3" style="color: black;" href="designandbuilt.html">Design & Build</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link px-3" style="color: black;" href="homeandlandpakages.html">Home & Land Pakages</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link px-3 " style="color: black;" href="contactus.html">Contact Us</a>
+        </li>
+         
+        </ul>
+         
+     
+  </div>
+</div>
+      
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: ;text-decoration: none;color: black;justify-content: space-evenly;">
+        <div class="navlinks">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
+        <li class="nav-item">
+          <a class="nav-link"  style="color: black;" aria-current="page" href="index.html">Home</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link px-3" style="color: black;" href="renovations.html">Renovations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3  active" style="color: black;" href="services.html">Services</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link px-3" style="color: black;" href="designandbuilt.html">Design & Build</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link px-3" style="color: black;" href="homeandlandpakages.html">Home & Land Pakages</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link px-3 " style="color: black;" href="contactus.html">Contact Us</a>
+        </li>
+        </ul>
+         </div>
+      <form class="d-flex">
+        
+        
+      </form>
+    </div>
+  </div>
+          </div>
+</nav>
+    </section>  
+            
+            
+            
+             <div class="container-fluid about" style="">
+  	
+                 <div class=lineUp style="background-color: ;">
+
+        <div class="container-fluid " style="height: vh; background-color: #FFDC80; color: black;text-align: justify;" id="services" data-aos="fade-up" >
+
+            <div class="row">
+                 
+                <div class="col-md-8 " style="background-color: ; margin-top: auto; margin-bottom: auto;font-size: 19px; padding: 30px;margin:;">
+                    <h2 class="text" style="">Services</h2>
+        <p class="text-justify">
+      At Vogue Build, we pride ourselves on offering a wide range of services beyond just renovations and design. Our expertise extends to various areas of construction and landscaping, ensuring that we can cater to all your needs. Whether you require a new driveway, inside boundary drainage, fences, or concrete pads, our skilled team is equipped to handle it all. We also specialize in landscaping services, including tree removal, setting up new gardens, and paving work. With our fleet of heavy machinery, such as excavators, loaders, forklifts, and rollers, we can efficiently tackle any project that requires their use. Additionally, our concrete saw work is executed with precision and attention to detail. At Vogue Build, we are dedicated to providing comprehensive solutions for your construction and landscaping requirements. Contact us today to explore how our diverse range of services can transform your property into a masterpiece.
+        </p>
+                    
+                    
+                </div>
+               <div class="col-md-4" style="margin: 0; padding: 0;"> <img style="width: 100%;height: 67vh;" src="assets/images/paint.jpg" alt="image.jpg"></div>
+            </div>
+        </div>
+    </div>
+    
+                 
+                 
+                <div class=lineUp style=" ;">
+
+        <div class="container-fluid " style="height: vh; background-color:#DFE2DB; color: black;text-align: justify;" id="services" data-aos="fade-up" >
+
+            <div class="row box">
+                 <div class="col-md-4" style="margin: 0; padding: 0;"> <img style="width: 100%; height: 100%;" src="assets/images/fencing.jpg" alt="image.jpg"></div>
+                <div class="col-md-8 " style="background-color: ; margin-top: auto; margin-bottom: auto;font-size: 19px; padding: 20px;margin:;">
+                    <h2 class="text" style="">Different services</h2>
+                    <h3>Driveways:</h3>
+        <p class="text-justify">Our team is experienced in constructing durable and visually appealing driveways. Whether you prefer concrete, asphalt, or paver driveways, we have the expertise to create a functional and aesthetically pleasing entrance to your property.</p>
+                    <h3>Inside Boundary Drainage:</h3>
+        <p class="text-justify">Effective drainage is crucial to prevent water damage and maintain the integrity of your property. We specialize in installing inside boundary drainage systems that efficiently channel excess water away from your home, ensuring a dry and secure environment.</p>
+                    <h3>Fences:</h3>
+        <p class="text-justify">Enhance the privacy and security of your property with our professional fence installation services. We offer a variety of fence options, including wood, vinyl, and metal, customized to your preferences and requirements.</p>
+                    <h3>Concrete Pads: </h3>
+        <p class="text-justify"> Whether you need a foundation for a shed, patio, or outdoor structure, we can create durable and level concrete pads that provide a solid base. Our team ensures precise measurements, proper reinforcement, and a smooth finish for your concrete pads.</p>
+                    
+                </div>
+               
+            </div>
+        </div>
+    </div>
+                 
+          <div class=lineUp style=" ;">
+
+        <div class="container-fluid " style="height: vh; background-color:white; color: black;text-align: justify;" id="services" data-aos="fade-up" >
+
+            <div class="row secbox">
+                 
+                <div class="col-md-8 " style="background-color: ; margin-top: auto; margin-bottom: auto;font-size: 19px; padding: 20px;margin:;">
+                    <h2 class="text" style=""></h2>
+      <h3>Landscaping:</h3>
+        <p class="text-justify">Our landscaping services are designed to transform your outdoor space into a beautiful and functional environment. From garden design and plant selection to irrigation systems and hardscape installation, we can create an outdoor oasis that complements your home.</p>
+                    <h3>Tree Removal:</h3>
+        <p class="text-justify">If you have trees that pose a risk or need to be cleared for construction purposes, our skilled team can safely and efficiently remove them. We prioritize safety and use appropriate techniques and equipment to ensure the smooth removal of trees.</p>
+                    <h3>New Garden Setup: </h3>
+        <p class="text-justify">Whether you want to revamp an existing garden or create a brand new one, we offer comprehensive garden setup services. From soil preparation and planting to installing borders and features, we can help you achieve the garden of your dreams.</p>
+                    <h3>Paving Work: </h3>
+        <p class="text-justify">Our paving services encompass a range of options, including pathways, patios, and pool surrounds. We work with various materials, such as concrete, brick, and natural stone, to create durable and visually appealing paved areas.</p>
+                    <h3>Excavator, Loader, Forklift, Roller:</h3>
+<p class="text-justify">With our fleet of heavy machinery, including excavators, loaders, forklifts, and rollers, we can efficiently handle excavation, material transport, and compaction tasks for construction and landscaping projects.</p>
+                </div>
+                
+               <div class="col-md-4" style="margin: 0; padding: 0;"> <img style="width: 100%; height: 100%;" src="assets/images/path.jpg" alt="image.jpg"></div>
+            </div>
+        </div>
+    </div>       
+                 
+            <div class=lineUp style=" ;">
+
+        <div class="container-fluid " style="height: vh; background-color:#DFE2DB; color: black;text-align: justify;" id="services" data-aos="fade-up" >
+
+            <div class="row box">
+                <div class="col-md-4" style="margin: 0; padding: 0;"> <img style="width: 100%; height: 100%;" src="assets/images/drain.jpg" alt="image.jpg"></div>
+                <div class="col-md-8 " style="background-color: ; margin-top: auto; margin-bottom: auto;font-size: 19px; padding: 20px;margin:;">
+                    <h4 class="text" style="">At Vogue Build, we are committed to providing top-notch services across all these areas, ensuring customer satisfaction and exceptional results for every project we undertake.</h4>
+                    <h5>Other Services</h5>
+                    <ul>
+                    <li> Demolishing </li>
+                        <li>Decking</li>
+                        <li>Re- lining</li>
+                        <li>Gibbing</li>
+                        <li>Painting</li>
+                        <li>Electrical </li>
+                        <li>Driveways</li>
+                        <li>Inside boundary Drainage</li>
+                        <li>Any joinery work</li>
+                        <li>Custom wardrobes </li>
+                        <li>Excavations </li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+    </div>         
+        </div>
+        
+            
+            
+            <div class=lineUp style="background-color: ;">
+
+        <div class="container-fluid " style="height: vh; background-color: #FFDC80; color: black;text-align: justify;" id="services" >
+
+            <div class="row">
+                 
+                <div class="col-md-7 " style="background-color: ; margin-top: auto; margin-bottom: auto;font-size: 19px; padding: 20px;margin:;">
+                    <h2 class="text" style="">Custom Built for your own home</h2>
+        <p >
+       Express your personal style in your home with Vogue Build's custom design services. Whether you prefer a contemporary, modern, rustic, professional, or industrial aesthetic, we can help you create a home that reflects your individuality. Don't settle for blending in - stand out with a one-of-a-kind home that truly represents you. Let Vogue Build bring your vision to life.
+        </p>
+                    
+                    
+                </div>
+               <div class="col-md-5" style="margin: 0; padding: 0;"> <img style="width: 100%; height:400px;padding: 40px;" src="assets/images/contactone.jpg" alt="contactus"></div>
+            </div>
+        </div>
+    </div>
+            
+            
+            
+            
+           
+           <footer class=" text-center text-dark ">
+
+      <div class="container p-4">
+  
+        <section>
+  
+          <div class="row">
+  
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercas " style="font-weight: 700;">Vogue</h5>
+  
+              <p><b>8 HENTY LANE, MARTON, 4710</b></p>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase" style="font-weight: 700;">Menu</h5>
+                <div class="endlist">
+              <ul class="list-unstyled mb-0 " >
+                <li>
+                  <a href="index.html" class="" style="text-decoration: none;font-weight: 550;">Home</a>
+                </li>
+                <li>
+                  <a href="renovations.html" class="" style="text-decoration: none;font-weight: 550;">Ronovations</a>
+                </li>
+                  <li>
+          <a href="services.html" style="text-decoration: none;font-weight: 550;">Services</a>
+        </li>
+                  <li>
+                  <a href="designandbuilt.html" class="" style="text-decoration: none;font-weight: 550;">Design Build</a>
+                </li>
+                   <li>
+                  <a href="homeandlandpakages.html" class="" style="text-decoration: none;font-weight: 550;">Home & Land Packages</a>
+                </li>
+                <li>
+                  <a href="contactus.html" class="" style="text-decoration: none;font-weight: 550;">Contact</a>
+                </li>
+  
+              </ul>
+              </div>
+            </div>
+  
+            <div class="d-none d-lg-block col-lg-4 col-md-6 mb-4 mb-md-0" style="text-align: justify;">
+              <h5 class="text-uppercase" style="text-align: center;font-weight: 700;">Contact</h5>
+             <div class="ending">
+              <div class="mobile text-white" style="">
+                <img src="assets/images/phone-removebg-preview.png" alt="phone"
+                  style="height: 60px; padding: 20px;text-decoration: none; color: black;">
+  
+                  <a href="tel:0064-021 236 8246" style="text-decoration: none;font-weight: 550;">0064-021 236 8246</a></div>
+                 <div class="mobile text-white" style="">
+               <img src="assets/images/email2.jpg" alt="phone" style="height: 60px; padding: 13px;">
+  
+                  <a href="mailto:info@mindsharemarketing.co.nz" style="text-decoration: none;"><b>info@mindsharemarketing.co.nz</b></a></div>
+                
+              
+                    
+              </div>
+            </div>
+              <div class="d-block d-sm-none col-lg-4 col-md-6 mb-4 mb-md-0" style="text-align: justify;">
+              <h5 class="text-uppercase" style="text-align: center;font-weight: 700;">Contact</h5>
+             <div class="ending">
+              <div class="mobile text-white" style="">
+                <img src="assets/images/phone-removebg-preview.png" alt="phone"
+                  style="height: 60px; padding: 20px;text-decoration: none; color: black;display: block;margin-left: auto;margin-right: auto;">
+  
+                  <a href="tel:0064-021 236 8246" style="text-decoration: none;font-weight: 550;text-align: center;display: block;">0064-021 236 8246</a></div>
+                 <div class="mobile text-white" style="">
+               <img src="assets/images/email2.jpg" alt="phone" style="height: 60px; padding: 13px;display: block;margin-left: auto;margin-right: auto;">
+  
+                  <a href="mailto:info@mindsharemarketing.co.nz" style="text-decoration: none;text-align: center;display: block;"><b>info@mindsharemarketing.co.nz</b></a></div>
+                
+              
+                    
+              </div>
+            </div>
+  
+          </div>
+  
+        </section>
+  
+  
+      </div>
+  
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        ©2023 Vogue. All rights reserved
+        <a class="text-white" href=""> </a>
+      </div>
+  
+  
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {
+        offset: 300,
+        duration: 1000,
+      }
+    );
+  </script>     
+            
+          
+            
+    </body>
+</html>
+            
+       
